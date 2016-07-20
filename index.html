@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>What if it soesn't belong in OpenStreetMap? - MapHubs - SOTMUS 2016</title>
+
+		<meta name="description" content="What if it soesn't belong in OpenStreetMap? - MapHubs - SOTMUS 2016">
+		<meta name="author" content="Kristofor Carle - MapHubs">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-background-iframe="https://maphubs.com/map/embed/112">
+					<div style="background-color: rgba(0,0,0,0.75)">
+					<h3>What if it doesn't belong in OpenStreetMap?</h3>
+					<p>Kristofor Carle</p>
+					<p>Lead Developer - MapHubs</p>
+					<p>State of the Map US - Seattle, WA</p>
+					<p>July 24, 2016</p>
+					<p style="font-size: 20px;"><a href="https://twitter.com/kristoforcarle" target="_blank">@kristoforcarle</a></p>
+					<p style="font-size: 20px;">kris@maphubs.com</p>
+
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>Not an easy question to answer</li>
+							<li>OSM realm vs GIS realm</li>
+							<li>Live map behind this slide: Heart of Borneo</li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>Outline</h3>
+					<ul>
+						<li>OSM:Wikipedia</li>
+						<li>What Doesn't Belong</li>
+						<li>OSM as a toolset (OSM vs. GIS)</li>
+						<li>Moabi & MapHubs</li>
+						<li>Demo</li>
+						<li>What's Next</li>
+					</ul>
+				</section>
+				<section>
+					<h3>About Us</h3>
+					<div>
+								<div style="width: 50%; float: left; margin-left: auto; left: auto; right: auto;">
+									<div style="width: 150px; height: 150px; margin: auto; border-radius: 50%; background-size: cover; background-position: 30% 50%;	background-image: url(img/leo.jpg);"></div>
+									<h6>Leo Bottrill – Founder and CEO</h6>
+									<ul>
+										<li style="font-size: 20px;">15 years of experience in the environment and development sector including over 4 years working in field conservation in Vietnam and Indonesia.</li>
+										<li style="font-size: 20px;">Started the awarding winning Moabi DRC initiative (rdc.moabi.org) in the Democratic Republic of the Congo.</li>
+									</ul>
+								</div>
+								<div style="width: 50%; float: left; margin-left: auto; left: auto; right: auto;">
+									<div style="width: 150px; height: 150px; margin: auto; border-radius: 50%; background-size: cover;background-position: 30% 50%;	background-image: url(img/kris.jpg);"></div>
+									<h6>Kristofor Carle – Lead Developer</h6>
+									<ul>
+										<li style="font-size: 20px;">Geospatial software engineer: spatial databases, web mapping, data analytics, and mobile apps.</li>
+										<li style="font-size: 20px;">Over 1 million edits on OSM!</li>
+									</ul>
+								</div>
+						</div>
+				</section>
+				<section>
+					<h3>OSM is like Wikipedia?</h3>
+					<ul>
+						<li>Requires a concensus</li>
+						<li>Anyone can edit</li>
+						<li>Data must be releasable under the open license</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>One Truth</li>
+							<li>Useful Information</li>
+							<li>Completely replacing a page with your "better" version?</li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>What doesn't belong in Wikipedia?</h3>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/List_of_fictional_Vice_Presidents_of_the_United_States" target="_blank">List of all fictional vice presidents</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/List_of_lists_of_lists" target="_blank">List of lists of lists</a></li>
+						<li>My movie script idea...</li>
+					</ul>
+				</section>
+				<section>
+					<h3>What doesn't belong in OSM?</h3>
+					<ul>
+						<li>Pokémon Go - PokéStops?</li>
+						<li>My favorite places with free wifi</li>
+						<li>Land I own</li>
+					</ul>
+					<aside class="notes">
+						Last one is serious, property rights whether ownership or permission from the government for mining/logging
+				 </aside>
+				</section>
+				<section>
+					<h3>Moabi</h3>
+					<img data-src="img/MoabiDRC.jpg" width=800 height=502 />
+					<aside class="notes">
+						<ul>
+							<li>First version of OSM as infrastructure - clone of OSM</li>
+							<li>Difficult to upload data - needed some GIS without using GIS</li>
+							<li></li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>MapHubs</h3>
+					<p>MapHubs is a home for the world's open map data and an easy tool for making and sharing maps</p>
+					<img data-src="img/MapHubs-Map.jpg" width=800 height=442 />
+					<aside class="notes">
+						<ul>
+							<li>Quickly map a map, overlaying evironmental data, data from OSM, or data your create</li>
+							<li>Tell your story: write story on MapHubs or embed a map in Medium or your website</li>
+							<li>Our customers = more familiar with OSM, too busy to also learn GIS, but we need some GIS features</li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>MapHubs Tech</h3>
+					<ul>
+						<li>OSM database and API in NodeJS - Macrocosm</li>
+						<li>Mapbox GL</li>
+						<li>Mapbox - base maps</li>
+						<li>Mapzen vector tiles - OSM overlay layers</li>
+					</ul>
+					<p>MapHubs is 100% open-source <a href="https://gihub.com/maphubs/maphubs" target="_blank">https://gihub.com/maphubs/maphubs</a></p>
+					<aside class="notes">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>DEMO</h3>
+					<a href="https://maphubs.com" target="_blank">maphubs.com</a>
+					<aside class="notes">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				 </aside>
+				</section>
+				<section>
+					<h3>Conclusion</h3>
+					<p style="text-align: left;">We covered:<p>
+					<ul>
+						<li>What Doesn't Belong</li>
+						<li>MapHubs</li>
+						<li>What is possible when we bring OSM and GIS worlds together</li>
+						<aside class="notes">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+					 </aside>
+					</ul>
+				</section>
+				<section>
+					<h3>What's Next</h3>
+					<ul>
+						<li>Map for Environment <a href="https://mapforenvironment.org" target="_blank">mapforenvironment.org</a></li>
+						<li>MapHubs premium features</li>
+						<aside class="notes">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+					 </aside>
+					</ul>
+
+				</section>
+				<section data-background-iframe="https://maphubs.com/map/embed/112">
+					<div style="background-color: rgba(0,0,0,0.75)">
+					<p>Kristofor Carle</p>
+					<p style="font-size: 24px;"><a href="https://twitter.com/kristoforcarle" target="_blank">@kristoforcarle</a></p>
+					<p style="font-size: 24px;">kris@maphubs.com</p>
+					<p style="font-size: 24px;">Slides at: <a href="http://sotmus2016.maphubs.com" target="_blank">sotmus2016.maphubs.com</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					 { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
